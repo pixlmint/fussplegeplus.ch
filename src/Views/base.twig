@@ -4,11 +4,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{% block fullTitle %}{% block title %}Home{% endblock %} | FussplegePlus{% endblock %}</title>
-		<link rel="stylesheet" href="/assets/css/style.css"/>
+		<link rel="stylesheet" href="/assets/css/style.css">
 	</head>
 	<body>
-			<h1>{{ block('title') }}</h1>
+		<h1>{{ block('title') }}</h1>
+		<nav>
+			<ul>
+				<li><a href="/kontakt">Kontakt</a></li>
+				<li><a href="/angebote">Angebote</a></li>
+				<li><a href="/ueber-mich">Über mich</a></li>
+			</ul>
+		</nav>
 		{% block body %}
+		{% endblock %}
+
+		{% block js %}
+			<script src="/assets/js/app.js"></script>
 		{% endblock %}
 	</body>
 </html>
