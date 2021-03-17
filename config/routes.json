@@ -3,5 +3,20 @@
         "route": "/",
         "controller": "App\\Controllers\\HomeController",
         "function": "index"
+    },
+    {
+        "route": "/kontakt",
+        "controller": "App\\Controllers\\ContactController",
+        "function": "index"
+    },
+    {
+        "route": "/ueber-mich",
+        "controller": "App\\Controllers\\AboutMeController",
+        "function": "index"
+    },
+    {
+        "route": "/angebote",
+        "controller": "App\\Controllers\\PricesController",
+        "function": "index"
     }
 ]
