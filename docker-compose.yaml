@@ -2,11 +2,8 @@ version: "3"
 
 services:
     'fusspflegeplus':
-        build:
-            context: .
-            dockerfile: Dockerfile
         container_name: 'fusspflegeplus.ch'
-        image: christiangroeber/fusspflegeplus
+        image: christiangroeber/php-server:7.4.2
         ports:
             - '94:80'
         volumes: 
