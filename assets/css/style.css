@@ -88,6 +88,7 @@ table.customTable thead {
 @font-face {
     font-family: 'Roboto';
     src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+    font-display: swap;
 }
 
 @media screen and (max-width: 600px) {
