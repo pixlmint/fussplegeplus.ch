@@ -9,9 +9,40 @@
 
 body {
     font-family: Roboto;
+    background-color: #f1f1f1;
 }
 
-nav ul{
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+}
+
+.banner {
+    background-image: url("/assets/img/banner.webp");
+    height: 80px;
+    background-size: contain;
+}
+
+header {
+    height: 150px;
+}
+
+header .logo {
+    float: left;
+}
+
+header .navbar {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+nav ul {
     list-style: none;
     width: 100%;
     display: flex;
@@ -32,6 +63,28 @@ nav li {
     display: block;
 }
 
+table.customTable {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: var(--primary);
+    border-style: solid;
+    color: #000000;
+}
+
+table.customTable td, table.customTable th {
+    border-width: 1px;
+    border-color: var(--primary);
+    border-style: solid;
+    padding: 5px;
+}
+
+table.customTable thead {
+    background-color: var(--primary);
+}
+
+
 @font-face {
     font-family: 'Roboto';
     src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
@@ -44,5 +97,30 @@ nav li {
 
     nav li {
         margin: 5px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .banner {
+        position: relative;
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+
+    .page {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .flex-row {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-row img {
+        max-width: unset;
     }
 }

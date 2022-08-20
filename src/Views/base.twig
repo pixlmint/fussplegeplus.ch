@@ -1,25 +1,40 @@
 <html lang="de">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{% block fullTitle %}{% block title %}Home{% endblock %} | FussplegePlus{% endblock %}</title>
-		<link rel="stylesheet" href="/assets/css/style.css">
-	</head>
-	<body>
-		<h1>{{ block('title') }}</h1>
-		<nav>
-			<ul>
-				<li><a href="/kontakt">Kontakt</a></li>
-				<li><a href="/angebote">Angebote</a></li>
-				<li><a href="/ueber-mich">Über mich</a></li>
-			</ul>
-		</nav>
-		{% block body %}
-		{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block fullTitle %}
+            {% block title %}Home
+            {% endblock %}
+            | FussplegePlus
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<div class="banner"></div>
+<div class="page">
+    <header>
+        <div class="logo">
+            <a href="/"><img src="/assets/img/fusspflegeplus-logo.png" alt=""></a>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/ueber-mich">Über mich</a></li>
+                    <li><a href="/angebote">Angebote</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block body %}{% endblock %}
 
-		{% block js %}
-			<script src="/assets/js/app.js"></script>
-		{% endblock %}
-	</body>
+    {% block js %}
+        <script src="/assets/js/app.js"></script>
+    {% endblock %}
+</div>
+</body>
 </html>
