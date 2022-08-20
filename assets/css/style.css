@@ -1,5 +1,5 @@
 :root {
-    --primary: lightblue;
+    --primary: #2ec1d9;
     --text: black;
 }
 
@@ -8,8 +8,12 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: MostraNuova;
     background-color: #f1f1f1;
+}
+
+b {
+    font-family: "MostraNuova Bold";
 }
 
 .page {
@@ -86,8 +90,14 @@ table.customTable thead {
 
 
 @font-face {
-    font-family: 'Roboto';
-    src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+    font-family: 'MostraNuova';
+    src: url("/assets/fonts/Mostra Nuova/Mostra Nuova.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MostraNuova Bold';
+    src: url("/assets/fonts/Mostra Nuova/Mostra Nuova Bold.otf");
     font-display: swap;
 }
 
