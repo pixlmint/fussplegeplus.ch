@@ -8,6 +8,6 @@ class HomeController extends AbstractController
 {
     public function index()
     {
-        return $this->render('home.twig');
+        return $this->render('base.twig');
     }
 }

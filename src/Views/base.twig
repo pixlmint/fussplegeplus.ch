@@ -19,23 +19,30 @@
 <div class="page">
     <header>
         <div class="logo">
-            <a href="/"><img src="/assets/img/fusspflegeplus-logo.png" alt=""></a>
-        </div>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/ueber-mich">Über mich</a></li>
-                    <li><a href="/angebote">Angebote</a></li>
-                    <li><a href="/kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
+            <div>
+                <a href="/"><img src="/assets/img/fusspflegeplus-logo.png" alt=""></a>
+            </div>
+            <div>
+                <h1>fusspflegeplus.ch</h1>
+            </div>
         </div>
     </header>
-    {% block body %}{% endblock %}
+    {% block body %}
+        <div id="home" class="page-section">
+            {{ block('body', 'home.twig') }}
+        </div>
+        <div id="about-me" class="page-section">
+            {{ block('body', 'about-me.twig') }}
+        </div>
+        <div id="angebote" class="page-section">
+            {{ block('body', 'prices.twig') }}
+        </div>
+        <div id="kontakt" class="page-section">
+            {{ block('body', 'contact.twig') }}
+        </div>
+    {% endblock %}
 
     {% block js %}
-        <script src="/assets/js/app.js"></script>
     {% endblock %}
 </div>
 </body>
